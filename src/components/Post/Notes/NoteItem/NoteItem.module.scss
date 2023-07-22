@@ -1,0 +1,40 @@
+.item{
+  display: flex;
+  margin: 8px 0;
+  position: relative;
+  .avatar{
+    width:1.8rem;
+    margin-right: 1rem;
+    border-radius: 5px;
+  }
+  .cavatar{
+    width:1.8rem;
+    margin-right: 1rem;
+    border-radius: 50%;
+  }
+  .icon{
+    position: absolute;
+    left: 1.2rem;
+    top: 0.8rem;
+  }
+  .handle{
+    color: #000;
+    font-weight: 500;
+    margin-right: 1rem;
+  }
+  .commentHandle{
+    display: flex;
+    justify-content: space-between;
+    .dots{
+      cursor: pointer;
+    }
+  }
+  .comment{
+    background-color: #fff;
+    padding: 0.6rem;
+    border-radius: 8px;
+    .commentText{
+      font-weight: 400;
+    }
+  }
+}

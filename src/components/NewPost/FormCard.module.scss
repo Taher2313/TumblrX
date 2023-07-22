@@ -1,0 +1,65 @@
+@import '../../index';
+.text {
+  color: rgb(89, 89, 89);
+  display: flex;
+  @media (max-width:578px) {
+    display: block;
+    width: 100%;
+  }
+}
+.avatar {
+  margin-right: 1rem;
+  border-radius: 0.3rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 0.3rem;
+  overflow: hidden;
+  @media (max-width:988px) {
+    display: none;
+  }
+}
+.form {
+  background-color: #fff;
+  border-radius: 0.3rem;
+  padding: 1rem;
+  min-height: 8rem;
+  width: 100%;
+  min-width: 30rem;
+  @media (max-width:988px) {
+    min-width: 15rem;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    div {
+      color: #000;
+      font-size: 1rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      position: relative;
+      svg {
+        margin-left: 0.5rem;
+        margin-bottom: -0.5rem;
+      }
+      ul {
+        color: #000;
+        min-width: 7.5rem;
+        font-size: 1rem;
+        background-color: #fff;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 3px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+        position: absolute;
+        left: 0%;
+        top: 110%;
+        li {
+          text-align: center;
+          padding: 5px 0;
+        }
+      }
+    }
+  }
+}

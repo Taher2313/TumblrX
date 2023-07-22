@@ -1,0 +1,32 @@
+.contanier {
+  display: flex;
+  margin-top: 40px;
+  padding-top: 40px;
+  justify-content: center;
+  .leftSide {
+    background-color: rgb(0, 25, 53);
+    width: 70%;
+    max-width: 700px;
+    border-radius: 5px;
+  }
+  .asideBar {
+    width: 20%;
+    max-width: 300px;
+  }
+} 
+@media (max-width : 990px ) {
+  .contanier {
+      .asideBar {
+          display: none;
+          width: 0%;
+      }
+      .leftSide{
+        width: 100%;
+        margin: 0 auto;
+      }
+  }
+}
+
+
+
+  

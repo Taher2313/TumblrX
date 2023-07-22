@@ -1,0 +1,122 @@
+@import 'config';
+
+.smile{
+    @media screen and (max-width:$max-width){
+        display: none;
+    }
+    background-color:#fff;
+    width:280px;
+    min-height:280px;
+    max-height: 600px;
+    overflow-y: hidden;
+    color:#000;
+    position:absolute;
+    top: 1rem;
+    right: -0.5rem;
+    z-index: 999;
+    border-radius: 3px 3px 0 0;
+    a{
+        color:#00B8FF;
+        font-size: 12px;
+    }
+    .header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #A5AEB8;
+        padding:6px;
+        .searchInput{
+            height: 100%;
+            width: 90%;
+            resize: none;
+            padding: 12px 20px;
+            margin:  0;
+            box-sizing: border-box;
+            border: 3px solid #acacac;
+            -webkit-transition: 0.5s;
+            transition: 0.5s;
+            outline: none;
+            font-size: 15px;
+            overflow-y: hidden;
+            scroll-behavior: smooth;
+            &:focus {
+             border: 3px solid #001935;
+             border-bottom: 3px solid #001935;
+           }
+        }
+        .icon{
+            color:#00b7f9;
+            font-size: 30px;
+            font-weight: bold;
+            cursor: pointer;
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            justify-content: center;
+            &:hover{
+                transform: translateY(-3px);
+            }
+        }
+    }
+
+    .all{
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 237px;  
+        padding:15px 0;
+        color:$smile-color;
+        svg{
+            flex:1;
+            width:80px;
+        }
+        span{
+            font-size: 25px;
+            flex:2;
+            padding-top:20px;
+        }
+        p{
+            font-size: 10px;
+        }
+    }
+    .conversation {
+        width: 100%;
+        display: flex;
+        padding: 10px;
+        align-items: center;
+        cursor: pointer;
+        &:hover {
+            background-color: #ddd;
+        }
+        .ConversationAvatar{
+            flex: 1;
+            width: 30px;
+            height: 30px;
+            .avatar{
+                width:   30px;
+                height: 30px;
+                border-radius: 50%;
+            }
+        }
+        .title{
+            flex: 4;
+            .h4{
+                font: bold;
+                font-size: 13px;
+            }
+            .p{
+                display: flex;
+                font: italic;
+                font-size: 10px;
+            }
+            .span{
+                display: inline;
+            }
+        }
+    }
+}

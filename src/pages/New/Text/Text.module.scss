@@ -1,0 +1,30 @@
+@import '../../../index.scss';
+.red {
+  background-color: red;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  .title {
+    outline: none;
+    border: none;
+    margin-bottom: 0.75rem;
+    font-size: 2.4rem;
+    font-weight: bolder;
+    color: #000;
+    height: 3rem;
+  }
+  .tags {
+    outline: none;
+    border: none;
+    margin-bottom: 0.625rem;
+    font-size: 0.8rem;
+  }
+  .actions {
+    border-top: 1px solid rgb(233, 232, 232);
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

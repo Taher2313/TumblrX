@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main-padding:20px;
+  --main-font:1.2rem;
+  --small-text-font:13px;
+  --slot-border-thickness:1px;
+  --main-color:white;
+  --background-on-hover:#53515185;
+  --font-family: "Favorit", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+  --white-on-dark: 255, 255, 255;
+}
+
+body {
+  background-color: #001935;
+}
+.aside{
+  .navBarSlot, .navBarFirst {
+    display: flex;
+    flex-direction: row;
+    color: var(--main-color);
+    text-transform: capitalize;
+    font: var(--main-font) sans-serif;
+    padding: var(--main-padding);
+    cursor: pointer;
+    clear: both;
+    div{
+      margin-bottom: 3px;  
+    }
+    .span2{
+     font-family: var(--font-family);
+     font-size: 1rem;
+     font-weight: 400;
+     line-height: 1.5;
+     margin-left: auto;
+     text-align: right;
+     color: rgba(var(--white-on-dark),.65);
+    }
+    .spansvg{
+      margin-left: auto;
+      .svg{
+        fill: rgba(var(--white-on-dark), 0.65);
+        transform: rotate(0deg);
+      }
+    }
+  }
+  .navBarSlot:hover {
+    background-color: var(--background-on-hover);
+  }
+
+  .Radar {
+    margin-top: 20px;
+    color: var(--main-color);
+    font: bold var(--main-font) sans-serif;
+    border-bottom: 3px solid #ffffff29;
+    padding: var(--main-padding);
+    margin-bottom: 20px;
+  }
+  .navBarFirst > div:nth-child(2) {
+    font: var(--small-text-font) sans-serif;
+    color: gray;
+    margin-top: 3px;
+  }
+  .navBarFirst {
+    cursor: auto;
+    flex-direction: column;
+  }
+  a{
+    text-decoration: none;
+  }
+}
+
